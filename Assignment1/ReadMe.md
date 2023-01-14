@@ -11,7 +11,7 @@ Author: Yohan Hmaiti
     also the top ten primes found will be printed from low to high. The file will be called primes.txt and will be generated in the same directory as the primes.java
     b. a couple summary statements will be printed to the console too that serve as debug logs as the program runs.
 
-#Summary of The Approach and Proof of Correctness and Efficiency of My Design Along with Experimental Evaluation:
+# Summary of The Approach and Proof of Correctness and Efficiency of My Design Along with Experimental Evaluation:
 ->(Note: this strategy was also covered in the code files as comments)
 
 we implement a version of the Sieve of Eratosthenes (segmented sieve) algorithm to find all the primes up to 10^8, 
