@@ -4,8 +4,10 @@ Author: Yohan Hmaiti
 # To compile and run the code use the following:
 1. Open the terminal, and navigate using the cd command to the location of the project, and check with the ls command that the file primes.java is there.
 2. Execute the followig commands:
+```
     a. To compile the program: $javac primes.java
     b. To run the program: $java primes
+```
 3. Expected Output:
     a. a file will be generated with details about the execution time on your machine, sum of primes found and their total count, 
     also the top ten primes found will be printed from low to high. The file will be called primes.txt and will be generated in the same directory as the primes.java
@@ -23,11 +25,12 @@ In this work, we rely on the usage of 8 threads, and we use a threshhold to avoi
 is that the threshhold is update by t *= 10, and we start from 10, and for each thread we increment the thredhhold by *10, we also 
 for each thread run the sieve of erathosthenes from 2 up to the sqrt of the threshhold specific to that thread, and then we mark all the multiples of the 
 primes out, our algorithm can be shown here: 
+```
 for (int i = 2; i <= Math.sqrt(t); i++) 
                if (primeNumbers[i]) 
                    for (int j = i * i; j <= t; j += i) 
                        primeNumbers[j] = false;
-
+```
 Thus, the algorithm technically takes the numbers that are multiples of the current prime number (x) in the itertation that are greater than or equal to x^2, and markes them as non-prime. 
 
 Based on the looping process that we have, we tend to mark an amount of numbers that is equal to (n / current starting prime point), for example:
